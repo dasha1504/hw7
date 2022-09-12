@@ -59,12 +59,12 @@ int j = int.Parse(Console.ReadLine());
 Console.WriteLine($"Element = {arr[j, i]}"); */
 
 
-/* 
-int[,] FillArray(int n, int m)
+
+double[,] FillArray(int n, int m)
 {
-    int[,] array = new int[n, m+1];
+    double[,] array = new double[n, m+1];
     for(int i = 0; i<array.GetLength(0); i++)
-    {   int sum = 0;
+    {   double sum = 0;
         for(int j=0; j<array.GetLength(1); j++)
         {
             if(j<array.GetLength(1) - 1)
@@ -75,14 +75,14 @@ int[,] FillArray(int n, int m)
             }
             else
             {
-                array[i, j] = sum;
+                array[i, j] = sum/m;
 
             }
         }
     }
     return array;
 }
-void PrintArray(int[,] array)
+void PrintArray(double[,] array)
 {
 for(int i = 0; i<array.GetLength(0); i++)
     {
@@ -93,11 +93,11 @@ for(int i = 0; i<array.GetLength(0); i++)
         Console.WriteLine();
     }
 }
-int[,] arr = FillArray(4, 5);
+double[,] arr = FillArray(3, 4);
 PrintArray(arr);
 
 
- */
+
 
 
 
